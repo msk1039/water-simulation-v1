@@ -1,0 +1,35 @@
+{
+  "name": "2d-water-simulation",
+  "version": "1.0.0",
+  "description": "A 2D pixelated water simulation that responds to device orientation.",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "live-server .",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'Test step not defined'"
+  },
+  "keywords": [
+    "water",
+    "simulation",
+    "2D",
+    "particles",
+    "device orientation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "gsap": "^3.12.2",
+    "live-server": "^1.2.2",
+    "p5": "^1.7.0"
+  },
+  "homepage": "https://github.com/yourusername/2d-water-simulation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/2d-water-simulation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/2d-water-simulation/issues"
+  }
+}

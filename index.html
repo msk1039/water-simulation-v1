@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Pixelated Water Simulation</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/public/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div id="info">Tilt your device to control gravity</div>
+    <div id="simulation-container">
+        <canvas id="pixel-overlay"></canvas>
+        <div class="debug-overlay" id="debug-overlay">Debug: Water simulation running</div>
+    </div>
+
+    <!-- Load libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Use type="module" for ES module support -->
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
