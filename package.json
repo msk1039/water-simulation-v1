@@ -16,20 +16,19 @@
     "particles",
     "device orientation"
   ],
-  "author": "Your Name",
-  "license": "MIT",
+  "author": "msk1039",
   "dependencies": {
     "express": "^4.21.2",
     "gsap": "^3.12.2",
     "live-server": "^1.2.2",
     "p5": "^1.7.0"
   },
-  "homepage": "https://github.com/yourusername/2d-water-simulation",
+  "homepage": "https://github.com/msk1039/water-simulation-v1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/2d-water-simulation.git"
+    "url": "git+https://github.com/msk1039/water-simulation-v1.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/2d-water-simulation/issues"
+    "url": "https://github.com/msk1039/water-simulation-v1/issues"
   }
 }

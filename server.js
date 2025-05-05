@@ -10,10 +10,28 @@ const app = express();
 app.use(express.static(__dirname));
 
 // SSL certificates
-const options = {
-  key: fs.readFileSync('localhost-key.pem'),
-  cert: fs.readFileSync('localhost.pem')
-};
+// get SERVER from .env , if its PRODUCTION use the production certificates
+// else use the localhost certificates
+
+const SERVER = process.env.SERVER || 'localhost';
+const isProduction = SERVER === 'PRODUCTION';
+
+let options;
+if(isProduction){
+  // Production certificates
+  const CERTNAME = process.env.CERTNAME || 'localhost.pem';
+  const KEYNAME = process.env.KEYNAME || 'localhost-key.pem';
+  options = {
+    key: fs.readFileSync(`${KEYNAME}`),
+    cert: fs.readFileSync(`${CERTNAME}`)
+  };
+}else{
+  // Localhost certificates
+  options = {
+    key: fs.readFileSync('localhost-key.pem'),
+    cert: fs.readFileSync('localhost.pem')
+  };
+}
 
 // Create HTTPS server
 const port = 8000;
